@@ -22,7 +22,7 @@ public class ShopperEntity implements Serializable{
 	    @OneToMany(cascade = CascadeType.ALL)
 	    @JoinTable(name = "shopper_product",
 	    joinColumns = @JoinColumn(name = "shopper_id"),
-	    inverseJoinColumns = @JoinColumn(name = "productid"))
+	    inverseJoinColumns = @JoinColumn(name = "id"))
         private List<ProductEntity> shelf;
 
 	    public ShopperEntity(String id, List<ProductEntity> shelf) {
