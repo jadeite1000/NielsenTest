@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "922886aa-58c5-477f-b3f9-c75e2b424911",
+		"name": "NielsenTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1488123",
+		"_collection_link": "https://lively-zodiac-452635.postman.co/workspace/NielsenTest~8af1ae87-e2cf-43e4-950a-2c18a4724757/collection/1488123-922886aa-58c5-477f-b3f9-c75e2b424911?action=share&source=collection_link&creator=1488123"
+	},
+	"item": [
+		{
+			"name": "Step1-SaveShopperInformation Long Version",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"shopperId\": \"S-1000\",\r\n    \"shelf\": [\r\n      {\r\n        \"productId\": \"MB-2093193398\",\r\n        \"relevancyScore\": 31.089209569320897\r\n      },\r\n      {\r\n        \"productId\": \"VV-1280808856\",\r\n        \"relevancyScore\": 55.16626010671777\r\n      },\r\n      {\r\n        \"productId\": \"MD-543564697\",\r\n        \"relevancyScore\": 73.01492966268303\r\n      },\r\n      {\r\n        \"productId\": \"BB-2144746855\",\r\n        \"relevancyScore\": 4.465418091552332\r\n      },\r\n      {\r\n        \"productId\": \"MB-2093193397\",\r\n        \"relevancyScore\": 81.86596372052234\r\n      },\r\n      {\r\n        \"productId\": \"SC-860550238\",\r\n        \"relevancyScore\": 80.39179367642213\r\n      },\r\n      {\r\n        \"productId\": \"BG-419110952\",\r\n        \"relevancyScore\": 17.06951788069343\r\n      },\r\n      {\r\n        \"productId\": \"BM-1173639537\",\r\n        \"relevancyScore\": 67.02308880778921\r\n      },\r\n      {\r\n        \"productId\": \"MJ-373746710\",\r\n        \"relevancyScore\": 5.732323263667915\r\n      },\r\n      {\r\n        \"productId\": \"SS-1529984359\",\r\n        \"relevancyScore\": 82.6173683756812\r\n      },\r\n      {\r\n        \"productId\": \"MJ-373746711\",\r\n        \"relevancyScore\": 83.6325837366619\r\n      },\r\n      {\r\n        \"productId\": \"BC-989301224\",\r\n        \"relevancyScore\": 6.778058627746741\r\n      },\r\n      {\r\n        \"productId\": \"BB-2144746857\",\r\n        \"relevancyScore\": 85.39314011525776\r\n      },\r\n      {\r\n        \"productId\": \"VA-1329167330\",\r\n        \"relevancyScore\": 67.76365858050977\r\n      },\r\n      {\r\n        \"productId\": \"SB-51995577\",\r\n        \"relevancyScore\": 46.014451739635916\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"shopperId\": \"S-1001\",\r\n    \"shelf\": [\r\n      {\r\n        \"productId\": \"MD-543564695\",\r\n        \"relevancyScore\": 64.9399444667783\r\n      },\r\n      {\r\n        \"productId\": \"BB-2144746857\",\r\n        \"relevancyScore\": 53.57797793220851\r\n      },\r\n      {\r\n        \"productId\": \"VT-246442909\",\r\n        \"relevancyScore\": 21.288534107744482\r\n      },\r\n      {\r\n        \"productId\": \"VA-1329167330\",\r\n        \"relevancyScore\": 27.014437875539265\r\n      },\r\n      {\r\n        \"productId\": \"SS-1529984359\",\r\n        \"relevancyScore\": 62.1324134409292\r\n      },\r\n      {\r\n        \"productId\": \"BM-1173639539\",\r\n        \"relevancyScore\": 44.137367556050236\r\n      },\r\n      {\r\n        \"productId\": \"MM-749337360\",\r\n        \"relevancyScore\": 6.856912727184749\r\n      },\r\n      {\r\n        \"productId\": \"ST-348265157\",\r\n        \"relevancyScore\": 39.775934624141605\r\n      },\r\n      {\r\n        \"productId\": \"VB-1890577308\",\r\n        \"relevancyScore\": 96.8131613220743\r\n      },\r\n      {\r\n        \"productId\": \"BG-419110953\",\r\n        \"relevancyScore\": 4.430050876459301\r\n      },\r\n      {\r\n        \"productId\": \"VT-246442911\",\r\n        \"relevancyScore\": 99.38024632323383\r\n      },\r\n      {\r\n        \"productId\": \"VV-1280808854\",\r\n        \"relevancyScore\": 2.4611321887394677\r\n      },\r\n      {\r\n        \"productId\": \"MM-749337358\",\r\n        \"relevancyScore\": 24.346224227541345\r\n      },\r\n      {\r\n        \"productId\": \"MM-749337359\",\r\n        \"relevancyScore\": 58.574240950900524\r\n      },\r\n      {\r\n        \"productId\": \"MD-543564696\",\r\n        \"relevancyScore\": 37.505474308360355\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"shopperId\": \"S-1002\",\r\n    \"shelf\": [\r\n      {\r\n        \"productId\": \"VA-1329167330\",\r\n        \"relevancyScore\": 19.492734899351294\r\n      },\r\n      {\r\n        \"productId\": \"BB-2144746855\",\r\n        \"relevancyScore\": 52.970581137195005\r\n      },\r\n      {\r\n        \"productId\": \"SB-51995577\",\r\n        \"relevancyScore\": 71.96790001671006\r\n      },\r\n      {\r\n        \"productId\": \"SC-860550238\",\r\n        \"relevancyScore\": 43.95637045922845\r\n      },\r\n      {\r\n        \"productId\": \"ST-348265158\",\r\n        \"relevancyScore\": 63.53588332610439\r\n      },\r\n      {\r\n        \"productId\": \"VB-1890577306\",\r\n        \"relevancyScore\": 28.318408103977355\r\n      },\r\n      {\r\n        \"productId\": \"MD-543564697\",\r\n        \"relevancyScore\": 96.8270084353957\r\n      },\r\n      {\r\n        \"productId\": \"VV-1280808855\",\r\n        \"relevancyScore\": 9.605985097277658\r\n      },\r\n      {\r\n        \"productId\": \"MM-749337358\",\r\n        \"relevancyScore\": 51.47881070494537\r\n      },\r\n      {\r\n        \"productId\": \"MB-2093193399\",\r\n        \"relevancyScore\": 97.79320043226103\r\n      },\r\n      {\r\n        \"productId\": \"BC-989301223\",\r\n        \"relevancyScore\": 22.951332705537688\r\n      },\r\n      {\r\n        \"productId\": \"BG-419110953\",\r\n        \"relevancyScore\": 42.45475417967195\r\n      },\r\n      {\r\n        \"productId\": \"MD-543564695\",\r\n        \"relevancyScore\": 81.82907115868066\r\n      },\r\n      {\r\n        \"productId\": \"SS-1529984359\",\r\n        \"relevancyScore\": 20.116106438128845\r\n      },\r\n      {\r\n        \"productId\": \"MB-2093193398\",\r\n        \"relevancyScore\": 91.64193020313606\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"shopperId\": \"S-1003\",\r\n    \"shelf\": [\r\n      {\r\n        \"productId\": \"MM-749337359\",\r\n        \"relevancyScore\": 9.285784508856453\r\n      },\r\n      {\r\n        \"productId\": \"VB-1890577308\",\r\n        \"relevancyScore\": 42.69865877013647\r\n      },\r\n      {\r\n        \"productId\": \"BB-2144746855\",\r\n        \"relevancyScore\": 51.652597645133206\r\n      },\r\n      {\r\n        \"productId\": \"VB-1890577306\",\r\n        \"relevancyScore\": 53.549240984667016\r\n      },\r\n      {\r\n        \"productId\": \"BG-419110952\",\r\n        \"relevancyScore\": 60.062975207288915\r\n      },\r\n      {\r\n        \"productId\": \"BM-1173639539\",\r\n        \"relevancyScore\": 63.844337249273266\r\n      },\r\n      {\r\n        \"productId\": \"SC-860550238\",\r\n        \"relevancyScore\": 12.045177782886729\r\n      },\r\n      {\r\n        \"productId\": \"MM-749337360\",\r\n        \"relevancyScore\": 62.348573774809225\r\n      },\r\n      {\r\n        \"productId\": \"VT-246442911\",\r\n        \"relevancyScore\": 19.421445338673916\r\n      },\r\n      {\r\n        \"productId\": \"SB-51995578\",\r\n        \"relevancyScore\": 50.23350517638963\r\n      },\r\n      {\r\n        \"productId\": \"BC-989301225\",\r\n        \"relevancyScore\": 76.10965733312545\r\n      },\r\n      {\r\n        \"productId\": \"BB-2144746856\",\r\n        \"relevancyScore\": 3.668377020508895\r\n      },\r\n      {\r\n        \"productId\": \"BM-1173639537\",\r\n        \"relevancyScore\": 65.53309644268158\r\n      },\r\n      {\r\n        \"productId\": \"MM-749337358\",\r\n        \"relevancyScore\": 99.01865852867185\r\n      },\r\n      {\r\n        \"productId\": \"BC-989301223\",\r\n        \"relevancyScore\": 1.0846539140113576\r\n      },\r\n      {\r\n        \"productId\": \"BG-1162366999\",\r\n        \"relevancyScore\": 30.737805376096695\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"shopperId\": \"S-1004\",\r\n    \"shelf\": [\r\n      {\r\n        \"productId\": \"BM-1173639537\",\r\n        \"relevancyScore\": 87.44404516029063\r\n      },\r\n      {\r\n        \"productId\": \"VB-1890577307\",\r\n        \"relevancyScore\": 82.79179867042755\r\n      },\r\n      {\r\n        \"productId\": \"VT-246442909\",\r\n        \"relevancyScore\": 73.9644416081247\r\n      },\r\n      {\r\n        \"productId\": \"BB-2144746855\",\r\n        \"relevancyScore\": 69.42747936618181\r\n      },\r\n      {\r\n        \"productId\": \"VB-1890577308\",\r\n        \"relevancyScore\": 25.81144046082404\r\n      },\r\n      {\r\n        \"productId\": \"ST-348265157\",\r\n        \"relevancyScore\": 80.35799873926712\r\n      },\r\n      {\r\n        \"productId\": \"MB-2093193397\",\r\n        \"relevancyScore\": 38.30020871138008\r\n      },\r\n      {\r\n        \"productId\": \"MD-543564696\",\r\n        \"relevancyScore\": 53.008430263420216\r\n      },\r\n      {\r\n        \"productId\": \"MJ-373746709\",\r\n        \"relevancyScore\": 38.108616670630326\r\n      },\r\n      {\r\n        \"productId\": \"VA-1329167332\",\r\n        \"relevancyScore\": 31.61708483693215\r\n      },\r\n      {\r\n        \"productId\": \"SS-1529984359\",\r\n        \"relevancyScore\": 36.0226464541305\r\n      },\r\n      {\r\n        \"productId\": \"MB-2093193399\",\r\n        \"relevancyScore\": 66.72664648565359\r\n      },\r\n      {\r\n        \"productId\": \"BC-989301225\",\r\n        \"relevancyScore\": 2.5494342826014704\r\n      },\r\n      {\r\n        \"productId\": \"MD-543564695\",\r\n        \"relevancyScore\": 91.11862453341534\r\n      },\r\n      {\r\n        \"productId\": \"SC-860550237\",\r\n        \"relevancyScore\": 18.570109269156355\r\n      },\r\n      {\r\n        \"productId\": \"SC-860550237\",\r\n        \"relevancyScore\": 30.737805376096695\r\n      }\r\n    ]\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/saveShopperInformation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"saveShopperInformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step2-Get Shopper By Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n                \r\n                \"productId\": \"VV-1280808856\"\r\n              \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/getShoppersByProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"getShoppersByProduct"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

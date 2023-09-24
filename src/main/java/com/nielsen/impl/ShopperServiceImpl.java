@@ -34,15 +34,15 @@ public class ShopperServiceImpl implements IShopperService{
 	// This method returns a shopper object based on the product id and limit
 	public ShopperEntity findByProductIdAndLimit(String productId, Integer limit) {
 	    // Use a query to join the product and shopper tables and filter by the product id
-	    String query = "SELECT s FROM ShopperEntity s JOIN s.product p WHERE p.productId = :productId and p.limit=:limit";
+	    String query = "SELECT s FROM ShopperEntity s JOIN s.shelf p WHERE p.productId = :productId";
 	    // Create a query object and set the parameter
 	    TypedQuery<ShopperEntity> typedQuery = entityManager.createQuery(query, ShopperEntity.class);
 	    typedQuery.setParameter("productId", productId);
-
-	    if (limit != null)
-	    {
-	    	typedQuery.setParameter("limit", limit);
-	    }
+        //Assuming limit is not a database field.
+	    if (limit != null) {
+	    	typedQuery.setMaxResults(limit);
+        }
+	
 	    // Return the single result or null if none
 	    return typedQuery.getSingleResult();
 	}

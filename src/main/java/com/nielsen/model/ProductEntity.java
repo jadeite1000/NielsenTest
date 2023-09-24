@@ -63,8 +63,7 @@ public class ProductEntity implements Serializable{
     @Column(nullable = true)
     private Double relevancyScore;
 
-    @Column(name = "limitby",nullable = true)
-    private Integer limit;
+
 
 	public String getProductId() {
 		return productId;
@@ -106,11 +105,5 @@ public class ProductEntity implements Serializable{
 		this.relevancyScore = relevancyScore;
 	}
 
-	public Integer getLimit() {
-		return limit;
-	}
 
-	public void setLimit(Integer limit) {
-		this.limit = limit;
-	}
 }

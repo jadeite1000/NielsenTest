@@ -21,13 +21,17 @@ public class ProductServiceImpl implements IProductService {
 	public List<ProductEntity> findByShopperIdAndCategoryAndBrand(String shopperId, String category, String brand, Integer limit) {
 	    // Use a query to join the product and shopper tables and filter by the criteria
 	    String query = "SELECT p FROM ProductEntity p JOIN p.shopper s WHERE s.id = :shopperId AND "
-	    		+ "p.category = :category AND p.brand = :brand and p.limit = :limit";
+	    		+ "p.category = :category AND p.brand = :brand";
 	    // Create a query object and set the parameters
 	    TypedQuery<ProductEntity> typedQuery = entityManager.createQuery(query, ProductEntity.class);
 	    typedQuery.setParameter("shopperId", shopperId);
 	    typedQuery.setParameter("category", category);
 	    typedQuery.setParameter("brand", brand);
-	    typedQuery.setParameter("limit", limit);
+	    //Assuming limit is not a database field.
+	    if (limit != null) {
+	    	typedQuery.setMaxResults(limit);
+        }
+	
 
 	    return typedQuery.getResultList();
 	}
