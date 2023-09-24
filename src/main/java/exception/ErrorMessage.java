@@ -27,7 +27,7 @@ public class ErrorMessage{
 
     public String toString() {
         String var10000 = this.getCode();
-        return "AccountErrorMessage(code=" + var10000 + ", message=" + this.getMessage() + ")";
+        return "NielsenErrorMessage(code=" + var10000 + ", message=" + this.getMessage() + ")";
     }
 
     public boolean equals(Object o) {
@@ -94,7 +94,7 @@ public class ErrorMessage{
         }
 
         public String toString() {
-            return "AccountErrorMessage.AccountErrorMessageBuilder(code=" + this.code + ", message=" + this.message + ")";
+            return "NielsenErrorMessage.NielsenErrorMessageBuilder(code=" + this.code + ", message=" + this.message + ")";
         }
     }
 }
