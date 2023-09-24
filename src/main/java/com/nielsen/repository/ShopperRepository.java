@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.nielsen.model.ShopperEntity;
 
-import java.util.List;
+
 
 @Repository
 public interface ShopperRepository  extends JpaRepository<ShopperEntity,Long>{

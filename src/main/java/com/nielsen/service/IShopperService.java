@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.nielsen.model.ShopperEntity;
-import com.nielsen.request.ShopperRequest;
+
 import com.nielsen.request.ShopperRequestBased;
 
 public interface IShopperService {

@@ -1,6 +1,6 @@
 package com.nielsen.controller;
 
-import javax.annotation.security.RolesAllowed;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.nielsen.model.ProductEntity;
@@ -24,7 +23,7 @@ import com.nielsen.request.ShopperRequestBased;
 import com.nielsen.service.IProductService;
 import com.nielsen.service.IShopperService;
 
-import java.math.BigDecimal;
+
 import java.util.*;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
