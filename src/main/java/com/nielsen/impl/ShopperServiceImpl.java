@@ -32,7 +32,7 @@ public class ShopperServiceImpl implements IShopperService{
 	private ShopperRepository shopperRepository;
 	
 	// This method returns a shopper object based on the product id and limit
-	public ShopperEntity findByProductIdAndLimit(String productId, Integer limit) {
+	public ShopperEntity getShopperByProduct(String productId, Integer limit) {
 	    // Use a query to join the product and shopper tables and filter by the product id
 	    String query = "SELECT s FROM ShopperEntity s JOIN s.shelf p WHERE p.productId = :productId";
 	    // Create a query object and set the parameter

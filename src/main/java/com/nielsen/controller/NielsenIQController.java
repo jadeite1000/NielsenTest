@@ -44,17 +44,17 @@ public class NielsenIQController {
 	public  ResponseEntity<List<ProductEntity>> getProductsByShopper(@Valid @RequestBody ShopperRequest shopper) {
 
 	
-		List<ProductEntity> productEntities = productService.findByShopperIdAndCategoryAndBrand(shopper.getShopperId(), shopper.getCategory(), shopper.getBrand(), shopper.getLimit());
+		List<ProductEntity> productEntities = productService.getProductsByShopper(shopper.getShopperId(), shopper.getCategory(), shopper.getBrand(), shopper.getLimit());
 		
 		return new ResponseEntity<List<ProductEntity>>(productEntities,HttpStatus.OK);
 	}
 	
 	@GetMapping("/getShoppersByProduct")
-	public ResponseEntity<ShopperEntity> getShoppersByProduct(@Valid@ RequestBody ProductRequest product) {
+	public ResponseEntity<ShopperEntity> getShopperByProduct(@Valid@ RequestBody ProductRequest product) {
 	    
 
 	    
-	    ShopperEntity shopperEntity = shopperService.findByProductIdAndLimit(product.getProductId(), product.getLimit());
+	    ShopperEntity shopperEntity = shopperService.getShopperByProduct(product.getProductId(), product.getLimit());
 	    return new ResponseEntity<ShopperEntity>(shopperEntity,HttpStatus.OK);
 	    
 	} 

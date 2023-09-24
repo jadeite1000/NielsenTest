@@ -26,9 +26,9 @@ public class ProductServiceImpl implements IProductService {
 	private ProductRepository productRepository;
 	
 	// This method returns an arraylist of products based on the shopper id, category, brand and limit
-	public List<ProductEntity> findByShopperIdAndCategoryAndBrand(String shopperId, String category, String brand, Integer limit) {
+	public List<ProductEntity> getProductsByShopper(String shopperId, String category, String brand, Integer limit) {
 	    // Use a query to join the product and shopper tables and filter by the criteria
-	    String query = "SELECT p FROM ProductEntity p JOIN p.shopper s WHERE s.id = :shopperId AND "
+	    String query = "SELECT p FROM ProductEntity p JOIN p.shopper  s WHERE s.id = :shopperId AND "
 	    		+ "p.category = :category AND p.brand = :brand";
 	    // Create a query object and set the parameters
 	    TypedQuery<ProductEntity> typedQuery = entityManager.createQuery(query, ProductEntity.class);
