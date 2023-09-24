@@ -59,7 +59,11 @@ public class ProductEntity implements Serializable{
     private Double relevancyScore;
 
     
-
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinTable(name = "shopper_product",
+    joinColumns = @JoinColumn(name = "id"),
+    inverseJoinColumns = @JoinColumn(name = "shopper_id"))
+    private ShopperEntity shopper;
 
 	public String getProductId() {
 		return productId;
