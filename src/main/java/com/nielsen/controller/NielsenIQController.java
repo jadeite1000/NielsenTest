@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.nielsen.model.ProductEntity;
 import com.nielsen.model.ShopperEntity;
 import com.nielsen.request.ProductRequest;
+import com.nielsen.request.ProductRequestBased;
 import com.nielsen.request.ShopperRequest;
 import com.nielsen.request.ShopperRequestBased;
 import com.nielsen.service.IProductService;
@@ -67,5 +68,12 @@ public class NielsenIQController {
 	   return new ResponseEntity<List<ShopperEntity>>(savedShoppers,HttpStatus.OK); 
   
    }
-	
+
+   @PostMapping("/saveProductInformation")
+   public ResponseEntity<List<ProductEntity>> saveProductsInformation(@Valid @RequestBody ArrayList<ProductRequestBased> products) throws Exception {
+	     
+	   List<ProductEntity> savedProducts = productService.save(products);
+	   return new ResponseEntity<List<ProductEntity>>(savedProducts,HttpStatus.OK); 
+  
+   }
 }

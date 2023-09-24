@@ -7,13 +7,13 @@ import javax.validation.constraints.NotNull;
 public class ShopperRequestBased {
 	@NotNull
     private String shopperId;
-	private List<Product> shelf;
+	private List<ProductRequestBased> shelf;
 	
-	public List<Product> getShelf() {
+	public List<ProductRequestBased> getShelf() {
 		return shelf;
 	}
 
-	public void setShelf(List<Product> shelf) {
+	public void setShelf(List<ProductRequestBased> shelf) {
 		this.shelf = shelf;
 	}
 

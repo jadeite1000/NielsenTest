@@ -4,11 +4,26 @@ import java.io.Serializable;
 
 import javax.validation.constraints.NotNull;
 
-public class Product implements Serializable {
+public class ProductRequestBased implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	@NotNull
 	private String productId;
+	private String category;
+	private String brand;
+	
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
 	private Double relevancyScore;
 	 
 	public String getProductId() {

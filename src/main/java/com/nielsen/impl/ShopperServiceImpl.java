@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import com.nielsen.model.ProductEntity;
 import com.nielsen.model.ShopperEntity;
 import com.nielsen.repository.ShopperRepository;
-import com.nielsen.request.Product;
+import com.nielsen.request.ProductRequestBased;
 import com.nielsen.request.ShopperRequest;
 import com.nielsen.request.ShopperRequestBased;
 import com.nielsen.service.IProductService;
@@ -55,10 +55,12 @@ public class ShopperServiceImpl implements IShopperService{
 			shopperEntity.setId(shopper.getShopperId());
 			ArrayList<ProductEntity> productEntities = new ArrayList<>();
 			
-			for(Product product: shopper.getShelf()) {
+			for(ProductRequestBased product: shopper.getShelf()) {
 				ProductEntity productEntity = new ProductEntity();
 				productEntity.setProductId(product.getProductId());
 				productEntity.setRelevancyScore(product.getRelevancyScore());
+				productEntity.setCategory(product.getCategory());
+				productEntity.setBrand(product.getBrand());
 				productEntities.add(productEntity);
 			}
 			shopperEntity.setShelf(productEntities);

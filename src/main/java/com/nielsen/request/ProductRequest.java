@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 
 
 
-public class ProductRequest implements Serializable{
+public class ProductRequest extends ProductRequestBased implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 
